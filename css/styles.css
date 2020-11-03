@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background: #495464;
+    padding: 30px 0;
+}
+
+.wrapper .sidebar h1 {
+    color: #eee;
+    text-align: center;
+}
+
+.wrapper .sidebar p {
+    color: #eee;
+    text-align: center;
+    margin: 8px 0 30px;
+}
+
+.wrapper .sidebar ul li {
+    padding: 20px;
+}
+
+.wrapper .sidebar ul li a {
+    color: black;
+}
+
+.wrapper .sidebar ul li a .fas {
+    width: 10px;
+    margin-right: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+    background: #161c24;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: #eee;
+}
+
+.wrapper .sidebar .social-media {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapper .sidebar .social-media a {
+    display: block;
+    width: 40px;
+    text-align: center;
+}
+
+.wrapper .sidebar .social-media a .fab {
+    color: lightgray;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.wrapper .sidebar .social-media a .fab:hover {
+    color: #161c24;
+}
+
+/* Main Content */
+.wrapper .main-content {
+    width: 100%;
+    margin-left: 350px;
+}
+
+/* Intro Section */
+#intro {
+    height: 100vh;
+}
+
+.hero-image {
+    background: url("../images/bg_white.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #495464;
+    font-size: 40px;
+}
+
+/* About Section */
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+#about {
+    background: #bbbfca;
+    text-align: center;
+}
+
+#about h2 {
+    padding: 20px 0;
+}
+
+/* Portfolio Section */
+#projects {
+    background: #161c24;
+    box-shadow: inset -2px 0px 6px 0px rgba(0,0,0,0.5);
+    padding: 60px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #eee;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.portfolio-image {
+    width: 100%;
+}
+
